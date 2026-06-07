@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="et">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mustad augud</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <img
+        src="assets/logo icon sm w-txt bk bg v2.svg"
+        alt="Orion Planetarium"
+        class="logo"
+      />
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="index.html">Avaleht</a></li>
+          <li><a href="programs.html">Programmid</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+        <a href="tickets.html" class="nav-btn">Osta pilet</a>
+      </nav>
+    </header>
+
+    <section class="program-details">
+      <div class="container">
+        <div class="details-layout">
+          <div class="gallery">
+            <div class="gallery-thumbs">
+              <img
+                src="assets/mustad augud 1.avif"
+                alt="Mustad Augud 1"
+                loading="lazy"
+                width="200"
+                height="150"
+              />
+              <img
+                src="assets/mustad augud 2.avif"
+                alt="Mustad Augud 2"
+                loading="lazy"
+                width="200"
+                height="150"
+              />
+              <img
+                src="assets/mustad augud 3.avif"
+                alt="Mustad Augud 3"
+                loading="lazy"
+                width="200"
+                height="150"
+              />
+              <img
+                src="assets/mustad augud 4.avif"
+                alt="Mustad Augud 4"
+                loading="lazy"
+                width="200"
+                height="150"
+              />
+            </div>
+            <div class="gallery-main">
+              <img
+                src="assets/mustad augud.avif"
+                alt="Mustad Augud"
+                loading="lazy"
+                width="800"
+                height="600"
+              />
+            </div>
+          </div>
+          <div class="details-card">
+            <h1>Mustad Augud</h1>
+            <span class="subtitle">
+              Universumi kõige salapärasemad objektid
+            </span>
+            <p class="description">
+              Mustad augud on universumi kõige tihedamad objektid, mille
+              gravitatsioon on nii tugev, et isegi valgus ei pääse neist välja.
+              Programm uurime nende teket, ehitust ja mõju ümbritsevale
+              kosmosele ning tutvume tänapäeva astronoomia põnevate avastustega.
+            </p>
+            <div class="details-table">
+              <div class="row">
+                <span>Kuupäev</span>
+                <span>Iga reede, laupäev ja pühapäev</span>
+              </div>
+              <div class="row">
+                <span>Kestvus</span>
+                <span>50 minutit</span>
+              </div>
+              <div class="row">
+                <span>Vanusepiirang</span>
+                <span>16 +</span>
+              </div>
+              <div class="row">
+                <span>Hind</span>
+                <span>8 €</span>
+              </div>
+            </div>
+            <div class="purchase-section">
+              <div class="quantity-selector">
+                <button id="minusBtn">-</button>
+                <span id="ticketCount">1</span>
+                <button id="plusBtn">+</button>
+              </div>
+              <a href="#" class="buy-ticket-btn"> Osta pilet </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="more-programs">
+      <div class="container">
+        <h2 class="more-programs-title">Rohkem programme</h2>
+        <div class="more-programs-grid">
+          <article class="more-program-card">
+            <img
+              src="assets/galaktikate vahel.avif"
+              alt=""
+              loading="lazy"
+              width="800"
+              height="450"
+            />
+            <div class="more-program-content">
+              <h3>Galaktikate Vahel</h3>
+              <p>
+                Avastage Linnutee kaugemaid piirkondi ja reisige läbi miljardite
+                tähtede ning galaktikate.
+              </p>
+              <div class="more-program-meta">
+                <span>
+                  <img src="assets/icons/clock.svg" alt="" />
+                  45 min
+                </span>
+                <span>
+                  <img src="assets/icons/person.svg" alt="" />
+                  Kõigile vanusegruppidele
+                </span>
+              </div>
+              <div class="more-program-btn">
+                <a href="details.html">Loe lähemalt</a>
+              </div>
+            </div>
+          </article>
+          <article class="more-program-card">
+            <img
+              src="assets/teekond marsile.avif"
+              alt=""
+              loading="lazy"
+              width="800"
+              height="450"
+            />
+            <div class="more-program-content">
+              <h3>Teekond Marsile</h3>
+              <p>Milline võiks välja näha inimeste elu Punasel Planeedil?</p>
+              <div class="more-program-meta">
+                <span>
+                  <img src="assets/icons/clock.svg" alt="" />
+                  50 min
+                </span>
+                <span>
+                  <img src="assets/icons/person.svg" alt="" />
+                  Kõigile vanusegruppidele
+                </span>
+              </div>
+              <div class="more-program-btn">
+                <a href="details.html">Loe lähemalt</a>
+              </div>
+            </div>
+          </article>
+          <article class="more-program-card">
+            <img
+              src="assets/päikesesüsteemi saladused.avif"
+              alt=""
+              loading="lazy"
+              width="800"
+              height="450"
+            />
+            <div class="more-program-content">
+              <h3>Päikesesüsteemi Saladused</h3>
+              <p>
+                Rännak läbi meie koduse päikesesüsteemi, tutvudes planeetide,
+                kuude ja teiste taevakehadega.
+              </p>
+              <div class="more-program-meta">
+                <span>
+                  <img src="assets/icons/clock.svg" alt="" />
+                  60 min
+                </span>
+                <span>
+                  <img src="assets/icons/person.svg" alt="" />
+                  Alates 12. eluaastast
+                </span>
+              </div>
+              <div class="more-program-btn">
+                <a href="details.html">Loe lähemalt</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="programs-page-btn">
+          <a href="programs.html">Programmid</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="divider texture">
+      <img src="assets/avasta kosmost textured.avif" loading="lazy" />
+    </section>
+
+    <footer class="footer">
+      <div class="footer-menu">
+        <a href="index.html">Avaleht</a>
+        <span>|</span>
+        <a href="programs.html">Programmid</a>
+        <span>|</span>
+        <a href="tickets.html">Piletid</a>
+        <span>|</span>
+        <a href="contact.html">Kontakt</a>
+      </div>
+      <div class="social-icons">
+        <a href="contact.html">
+          <img src="assets/icons/youtube.svg" alt="YouTube" />
+        </a>
+        <a href="contact.html">
+          <img src="assets/icons/facebook.svg" alt="Facebook" />
+        </a>
+        <a href="contact.html">
+          <img src="assets/icons/twitter.svg" alt="Twitter" />
+        </a>
+        <a href="contact.html">
+          <img src="assets/icons/instagram.svg" alt="Instagram" />
+        </a>
+      </div>
+      <hr />
+      <p class="copyright">© 2026 Orion Planetarium. All rights reserved</p>
+    </footer>
+
+    <script>
+      const minusBtn = document.getElementById("minusBtn");
+      const plusBtn = document.getElementById("plusBtn");
+      const ticketCount = document.getElementById("ticketCount");
+      let count = 1;
+      plusBtn.addEventListener("click", () => {
+        count++;
+        ticketCount.textContent = count;
+      });
+      minusBtn.addEventListener("click", () => {
+        if (count > 1) {
+          count--;
+          ticketCount.textContent = count;
+        }
+      });
+    </script>
+  </body>
+</html>

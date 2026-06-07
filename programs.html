@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="et">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programmid</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <img
+        src="assets/logo icon sm w-txt bk bg v2.svg"
+        alt="Orion Planetarium"
+        class="logo"
+      />
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="index.html">Avaleht</a></li>
+          <li><a href="programs.html">Programmid</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+        <a href="tickets.html" class="nav-btn">Osta pilet</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>
+          Avastage universumi saladused
+          <br />
+          Orion Planetaarumis
+        </h1>
+        <div class="hero-buttons">
+          <a href="tickets.html" class="btn btn-secondary">Piletid</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="filter-bar">
+      <div class="filter-left">
+        <label>Sorteeri:</label>
+        <select id="ageFilter">
+          <option value="">Vanus</option>
+          <option value="all">Kogu Pere</option>
+          <option value="6">0-6 aastat</option>
+          <option value="12">7-12 aastat</option>
+          <option value="18">13-18 aastat</option>
+          <option value="adult">Täiskasvanud</option>
+        </select>
+        <select id="durationFilter">
+          <option value="">Kestus</option>
+          <option value="30">30 min</option>
+          <option value="45">30-45 min</option>
+          <option value="60">45-60 min</option>
+          <option value="60">60+</option>
+        </select>
+        <select id="priceFilter">
+          <option value="">Hind</option>
+          <option value="easy">Kuni 5€</option>
+          <option value="medium">5-10€</option>
+          <option value="hard">10€+</option>
+        </select>
+      </div>
+      <div class="filter-right">
+        <div class="search-box">
+          <img src="assets/icons/search.svg" alt="Search" />
+          <input type="text" id="searchInput" placeholder="Otsi programmi" />
+        </div>
+      </div>
+    </section>
+
+    <section class="programs-section">
+      <div class="container">
+        <div class="program-category">
+          <h2 class="section-title-category">Kogu perele</h2>
+          <div class="programs-grid">
+            <article class="program-card">
+              <div class="card-image">
+                <img
+                  src="assets/galaktikate vahel.avif"
+                  alt="Galaktikate Vahel"
+                  loading="lazy"
+                  width="800"
+                  height="450"
+                />
+              </div>
+              <div class="card-content">
+                <h3>Galaktikate Vahel</h3>
+                <p>
+                  Avastage Linnutee kaugemaid piirkondi ja reisige läbi
+                  miljardite tähtede ning galaktikate. Programm tutvustab
+                  universumi suurimaid struktuure ja kosmilisi saladusi.
+                </p>
+                <div class="card-meta">
+                  <span>
+                    <img
+                      src="assets/icons/clock.svg"
+                      alt=""
+                      class="meta-icon"
+                    />
+                    45 min
+                  </span>
+                  <span>
+                    <img
+                      src="assets/icons/person.svg"
+                      alt=""
+                      class="meta-icon"
+                    />
+                    Kõigile vanusegruppidele
+                  </span>
+                </div>
+                <a href="details.html" class="program-btn">Loe lähemalt</a>
+              </div>
+            </article>
+            <article class="program-card">
+              <div class="card-image">
+                <img
+                  src="assets/öötaeva avastamine.avif"
+                  alt="Öötaeva Avastamine"
+                  loading="lazy"
+                  width="800"
+                  height="450"
+                />
+              </div>
+              <div class="card-content">
+                <h3>Öötaeva Avastamine</h3>
+                <p>
+                  Õpi tundma tähtkujusid, planeete ja teisi taevakehi, mida võib
+                  öises taevas näha. Programm aitab sul orienteeruda tähistaevas
+                  ja avastada selle peamisi objekte.
+                </p>
+                <div class="card-meta">
+                  <span>
+                    <img
+                      src="assets/icons/clock.svg"
+                      alt=""
+                      class="meta-icon"
+                    />
+                    50 min
+                  </span>
+                  <span>
+                    <img
+                      src="assets/icons/person.svg"
+                      alt=""
+                      class="meta-icon"
+                    />
+                    Kõigile vanusegruppidele
+                  </span>
+                </div>
+                <a href="details.html" class="program-btn">Loe lähemalt</a>
+              </div>
+            </article>
+            <article class="program-card">
+              <div class="card-image">
+                <img
+                  src="assets/teekond marsile.avif"
+                  alt="Teekond Marsile"
+                  loading="lazy"
+                  width="800"
+                  height="450"
+                />
+              </div>
+              <div class="card-content">
+                <h3>Teekond Marsile</h3>
+                <p>
+                  Milline võiks välja näha inimeste elu Punasel Planeedil?
+                  Tutvuge Marsi uurimise ajalooga ning tuleviku
+                  kosmosemissioonidega.
+                </p>
+                <div class="card-meta">
+                  <span>
+                    <img
+                      src="assets/icons/clock.svg"
+                      alt=""
+                      class="meta-icon"
+                    />
+                    60 min
+                  </span>
+                  <span>
+                    <img
+                      src="assets/icons/person.svg"
+                      alt=""
+                      class="meta-icon"
+                    />
+                    Kõigile vanusegruppidele
+                  </span>
+                </div>
+                <a href="details.html" class="program-btn">Loe lähemalt</a>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="program-category">
+          <h2 class="section-title-category">Noortele</h2>
+          <div class="programs-grid">
+            <article class="program-card">
+              <div class="card-image">
+                <img
+                  src="assets/astronaudiks saamine.avif"
+                  alt="Astronaudiks saamine"
+                  loading="lazy"
+                  width="800"
+                  height="450"
+                />
+              </div>
+              <div class="card-content">
+                <h3>Astronaudiks saamine</h3>
+                <p>
+                  Saa teada, milliseid oskusi ja teadmisi on vaja astronaudiks
+                  saamiseks. Tutvu kosmosemissioonide ettevalmistuse ja
+                  astronautide igapäevaeluga.
+                </p>
+                <div class="card-meta">
+                  <span>
+                    <img
+                      src="assets/icons/clock.svg"
+                      alt=""
+                      class="meta-icon"
+                    />
+                    45 min
+                  </span>
+                  <span>
+                    <img
+                      src="assets/icons/person.svg"
+                      alt=""
+                      class="meta-icon"
+                    />
+                    Alates 12. eluaastast
+                  </span>
+                </div>
+                <a href="details.html" class="program-btn">Loe lähemalt</a>
+              </div>
+            </article>
+            <article class="program-card">
+              <div class="card-image">
+                <img
+                  src="assets/universumi sünd.avif"
+                  alt="Universumi sünd"
+                  loading="lazy"
+                  width="800"
+                  height="450"
+                />
+              </div>
+              <div class="card-content">
+                <h3>Universumi sünd</h3>
+                <p>
+                  Rända ajas tagasi universumi algusesse ja avasta Suure Paugu
+                  teooria. Uuri, kuidas kujunesid esimesed tähed, galaktikad ja
+                  planeedid.
+                </p>
+                <div class="card-meta">
+                  <span>
+                    <img
+                      src="assets/icons/clock.svg"
+                      alt=""
+                      class="meta-icon"
+                    />
+                    50 min
+                  </span>
+                  <span>
+                    <img
+                      src="assets/icons/person.svg"
+                      alt=""
+                      class="meta-icon"
+                    />
+                    Alates 12. eluaastast
+                  </span>
+                </div>
+                <a href="details.html" class="program-btn">Loe lähemalt</a>
+              </div>
+            </article>
+            <article class="program-card">
+              <div class="card-image">
+                <img
+                  src="assets/päikesesüsteemi saladused.avif"
+                  alt="Päikesesüsteemi saladused"
+                  loading="lazy"
+                  width="800"
+                  height="450"
+                />
+              </div>
+              <div class="card-content">
+                <h3>Päikesesüsteemi saladused</h3>
+                <p>
+                  Rännak läbi meie koduse päikesesüsteemi, tutvudes planeetide,
+                  kuude ja teiste taevakehadega.
+                </p>
+                <div class="card-meta">
+                  <span>
+                    <img
+                      src="assets/icons/clock.svg"
+                      alt=""
+                      class="meta-icon"
+                    />
+                    60 min
+                  </span>
+                  <span>
+                    <img
+                      src="assets/icons/person.svg"
+                      alt=""
+                      class="meta-icon"
+                    />
+                    Alates 12. eluaastast
+                  </span>
+                </div>
+                <a href="details.html" class="program-btn">Loe lähemalt</a>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="program-category">
+          <h2 class="section-title-category">Täiskasvanutele</h2>
+          <div class="programs-grid">
+            <article class="program-card">
+              <div class="card-image">
+                <img
+                  src="assets/mustad augud.avif"
+                  alt="Mustad augud"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-content">
+                <h3>Mustad augud</h3>
+                <p>
+                  Tutvu universumi kõige salapärasemate objektidega ja saa
+                  teada, kuidas mustad augud tekivad. Avasta, milline mõju on
+                  neil ümbritsevale ruumile ja ajale.
+                </p>
+                <div class="card-meta">
+                  <span>
+                    <img
+                      src="assets/icons/clock.svg"
+                      alt=""
+                      class="meta-icon"
+                    />
+                    45 min
+                  </span>
+                  <span>
+                    <img
+                      src="assets/icons/person.svg"
+                      alt=""
+                      class="meta-icon"
+                    />
+                    Alates 16. eluaastast
+                  </span>
+                </div>
+                <a href="details.html" class="program-btn">Loe lähemalt</a>
+              </div>
+            </article>
+            <article class="program-card">
+              <div class="card-image">
+                <img
+                  src="assets/tähtede sünd ja surm.avif"
+                  alt="Tähtede sünd ja surm"
+                  loading="lazy"
+                  width="800"
+                  height="450"
+                />
+              </div>
+              <div class="card-content">
+                <h3>Tähtede sünd ja surm</h3>
+                <p>
+                  Kuidas sünnivad tähed ja mis juhtub nende elukaare lõpus?
+                  Põnev programm supernoovadest, neutronitähtedest ja mustadest
+                  aukudest.
+                </p>
+                <div class="card-meta">
+                  <span>
+                    <img
+                      src="assets/icons/clock.svg"
+                      alt=""
+                      class="meta-icon"
+                    />
+                    50 min
+                  </span>
+                  <span>
+                    <img
+                      src="assets/icons/person.svg"
+                      alt=""
+                      class="meta-icon"
+                    />
+                    Alates 16. eluaastast
+                  </span>
+                </div>
+                <a href="details.html" class="program-btn">Loe lähemalt</a>
+              </div>
+            </article>
+            <article class="program-card">
+              <div class="card-image">
+                <img
+                  src="assets/galaktikate kokkupõrked.avif"
+                  alt="Galaktikate Kokkupõrked"
+                  loading="lazy"
+                  width="800"
+                  height="450"
+                />
+              </div>
+              <div class="card-content">
+                <h3>Galaktikate Kokkupõrked</h3>
+                <p>
+                  Vaata, mis juhtub siis, kui hiiglaslikud galaktikad omavahel
+                  kohtuvad. Programm näitab, kuidas sellised sündmused
+                  kujundavad universumit ja loovad uusi tähti.
+                </p>
+                <div class="card-meta">
+                  <span>
+                    <img
+                      src="assets/icons/clock.svg"
+                      alt=""
+                      class="meta-icon"
+                    />
+                    60 min
+                  </span>
+                  <span>
+                    <img
+                      src="assets/icons/person.svg"
+                      alt=""
+                      class="meta-icon"
+                    />
+                    Alates 16. eluaastast
+                  </span>
+                </div>
+                <a href="details.html" class="program-btn">Loe lähemalt</a>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="category-btn-wrapper">
+          <a href="#" class="category-btn">Rohkem programme</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="divider texture">
+      <img src="assets/avasta kosmost textured.avif" loading="lazy" />
+    </section>
+
+    <footer class="footer">
+      <div class="footer-menu">
+        <a href="index.html">Avaleht</a>
+        <span>|</span>
+        <a href="programs.html">Programmid</a>
+        <span>|</span>
+        <a href="tickets.html">Piletid</a>
+        <span>|</span>
+        <a href="contact.html">Kontakt</a>
+      </div>
+      <div class="social-icons">
+        <a href="contact.html">
+          <img src="assets/icons/youtube.svg" alt="YouTube" />
+        </a>
+        <a href="contact.html">
+          <img src="assets/icons/facebook.svg" alt="Facebook" />
+        </a>
+        <a href="contact.html">
+          <img src="assets/icons/twitter.svg" alt="Twitter" />
+        </a>
+        <a href="contact.html">
+          <img src="assets/icons/instagram.svg" alt="Instagram" />
+        </a>
+      </div>
+      <hr />
+      <p class="copyright">© 2026 Orion Planetarium. All rights reserved</p>
+    </footer>
+  </body>
+</html>
